@@ -21,7 +21,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     })
       .then((response) => response.json())
       .then(async (data) => {
-        console.log('Response from chatgpt', data);
         const { message } = data;
         alert(message);
 
