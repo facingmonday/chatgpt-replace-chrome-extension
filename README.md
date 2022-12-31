@@ -2,7 +2,7 @@
 
 A chrome extension that allows you to select text in a browser and replace it with chatgpt. For now it only works with basic text boxes but anything else it will just show the response in an alert.
 
-![](https://github.com/facingmonday/chatgptreplace.gif)
+![](https://github.com/facingmonday/chatgpt-replace-chrome-extension/blob/main/chatgptreplace.gif?raw=true)
 
 ## Install
 
