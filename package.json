@@ -1,17 +1,26 @@
 {
+  "name": "chatgpt-replace-chrome-extension",
+  "version": "1.0.0",
+  "description": "A chrome extension that allows you to select text in a browser and replace it with chatgpt. For now it only works with basic text boxes but anything else it will just show the response in an alert.",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js "
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facingmonday/chatgpt-replace-chrome-extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facingmonday/chatgpt-replace-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/facingmonday/chatgpt-replace-chrome-extension#readme",
   "dependencies": {
-    "body-parser": "^1.20.1",
-    "chatgpt": "^2.0.5",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
-    "dotenv-safe": "^8.2.0",
     "express": "^4.18.2",
-    "node-fetch": "^3.3.0",
-    "openai": "^3.1.0",
-    "ora": "^6.1.2"
-  },
-  "type": "module"
+    "openai": "^3.1.0"
+  }
 }
