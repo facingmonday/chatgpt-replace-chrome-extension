@@ -35,7 +35,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         } else {
           alert(message);
         }
-
         restoreCursor();
       })
       .catch((error) => {
