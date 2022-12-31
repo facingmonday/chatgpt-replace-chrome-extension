@@ -22,7 +22,19 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       .then((response) => response.json())
       .then(async (data) => {
         const { message } = data;
-        alert(message);
+
+        const activeElement =
+          originalActiveElement ||
+          (document.activeElement.isContentEditable && document.activeElement);
+
+        if (activeElement &&  (
+          activeElement.nodeName.toUpperCase() === "TEXTAREA" ||
+          activeElement.nodeName.toUpperCase() === "INPUT"
+        )) {
+          activeElement.value = message;
+        } else {
+          alert(message);
+        }
 
         restoreCursor();
       })
